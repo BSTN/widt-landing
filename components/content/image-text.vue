@@ -11,6 +11,9 @@
               <div class="commenttext">{{ comment.text }}</div>
             </div>
           </div>
+          <div class="avatar" v-if="type === 'avatar'">
+            <img src="/avatar1.png" />
+          </div>
         </div>
       </div>
       <div class="text">
@@ -43,11 +46,16 @@ const { stop } = useIntersectionObserver(
 <style lang="less" scoped>
 @import "@/less/ease.less";
 .image-text {
-  // border-bottom: 1px solid #fff;
   margin: 0 auto;
   position: relative;
+  &:first-child {
+    margin-top: -4rem;
+    .row {
+      min-height: 80vh;
+    }
+  }
   .row {
-    min-height: 90vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -90,6 +98,7 @@ const { stop } = useIntersectionObserver(
       //   font-weight: bold;
       //   text-transform: uppercase;
       margin-top: 1em;
+      margin-bottom: 1em;
     }
     :deep(p) {
       // filter: url(#fuzz2);
@@ -156,7 +165,7 @@ const { stop } = useIntersectionObserver(
     color: #332e1c;
     // blue
     background: #ffffff;
-    color: #00733b;
+    color: var(--fg);
     // text-shadow: 0 0 0.125em #2affaa;
     // colours
     // background: #103b5e;
@@ -228,6 +237,30 @@ const { stop } = useIntersectionObserver(
   &:nth-child(5) .img {
     // background-image: url(/pink.jpg);
     background-position: center;
+  }
+}
+
+.avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  img {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+    transition: all 1s @easeInOutExpo;
+    transition-delay: 0.25s;
+    .hidden & {
+      transform: scale(0);
+    }
   }
 }
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div class="the-menu">
     <div class="sticky width">
+      <!-- <button></button> -->
+      <div>Wie is de trol?</div>
+      <a href="#intro">introductie</a>
       <a href="#het-lespakket">lespakket</a>
       <a href="#over-ons">over ons</a>
-      <button></button>
     </div>
   </div>
 </template>
@@ -14,13 +16,45 @@
   text-align: right;
   width: 100%;
   position: sticky;
-  top: 0;
-  // outline: 1px solid #fff;
-  height: 2em;
+  top: -2em;
+  padding-top: 2em;
+  transition: all 0.5s;
+  z-index: 99;
   .sticky {
-    padding: 2em 0 0.75em;
+    padding: 1em 2.5em 0.75em;
+    padding: 1em 0.5em 0.75em;
     margin: 0 auto;
-    border-bottom: 0.5px solid var(--fg);
+    border-bottom: 0.5px solid transparent;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 0.5px solid var(--fg);
+      opacity: 0;
+      transition: all 0.5s;
+    }
+    .nottop & {
+      &:after {
+        opacity: 0.2;
+      }
+    }
+  }
+  .nottop & {
+    background: var(--bg);
+  }
+}
+.sticky > div {
+  opacity: 0;
+  float: left;
+  font-family: "exposure";
+  transform: translateY(-1em);
+  transition: all 0.3s @easeInOutSine;
+  transform-origin: center top;
+  .nottop & {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 a {
@@ -35,23 +69,24 @@ a {
   &:hover {
     text-decoration: underline;
   }
-  .nottop & {
-    transition-delay: 0.5s;
-    opacity: 0;
-    transform: translateY(-1em);
-  }
+  // .nottop & {
+  //   transition-delay: 0.5s;
+  //   opacity: 0;
+  //   transform: translateY(-1em);
+  // }
 }
 button {
   @s: 1.2rem;
   width: @s;
   height: @s;
-  margin-left: 2rem;
+  margin-right: 1rem;
   border-radius: 100%;
   padding: 0;
   vertical-align: top;
   position: relative;
   margin-top: 0.125rem;
   border: 2px solid var(--fg);
+  float: left;
   &:after {
     content: "";
     position: absolute;

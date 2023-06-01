@@ -11,7 +11,7 @@ In deze game kruip jij in de rol van moderator van een reactieplatform en is het
 ::imageText{class="left"}
 Discussiëren doe je de hele dag door: met vrienden, ouders, docenten. In een goeie discussie luister je naar elkaars standpunten en ben je bereid je mening bij te stellen.
 ::
-::imageText
+::imageText{type="avatar"}
 Maar in online discussies gaat dit vaak mis: mensen praten er vaker langs elkaar heen en houden weinig rekening met elkaar waardoor een vijandige sfeer kan ontstaan.
 ::
 
@@ -34,4 +34,4 @@ Het project heeft als doel om digitale vaardigheden van jongeren en senioren te 
 De game is ontwikkeld door Basten Stokhuyzen in samenwerking met Cedric Waterschoot en Mathilde Jansen.
 Bij Wie is de trol? zijn de volgende organisaties aangesloten:
 
-Meertens Instituut, Tilburg University, NEMO Kennislink, Alliantie Digitaal samenleven, Netwerk Mediawijsheid
+:partners

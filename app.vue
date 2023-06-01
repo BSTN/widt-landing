@@ -8,7 +8,7 @@
 </template>
 <script type="ts" setup>
 import { useWindowScroll } from '@vueuse/core'
-const {y} = useWindowScroll()
+const { y } = useWindowScroll()
 const position = computed(() => {
   return y.value < 10 ? 'top' : 'nottop'
 })
