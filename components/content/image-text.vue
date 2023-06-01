@@ -5,7 +5,10 @@
         <!-- image -->
         <div class="img">
           <!-- comments -->
-          <div class="comments" v-if="type === 'comments'">
+          <div
+            class="comments"
+            v-if="type === 'comments' && position === 'visible'"
+          >
             <div v-for="comment in comments" class="comment">
               <div class="date">{{ comment.date }}</div>
               <div class="commenttext">{{ comment.text }}</div>
@@ -59,6 +62,9 @@ const { stop } = useIntersectionObserver(
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    @media (max-width: 60rem) {
+      display: block;
+    }
     // border-left: 1px solid #fff;
     // border-right: 1px solid #fff;
     // &:after {
@@ -98,11 +104,17 @@ const { stop } = useIntersectionObserver(
       //   font-weight: bold;
       //   text-transform: uppercase;
       margin-top: 1em;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
+      line-height: 1em;
+      .textappear();
+      animation-delay: 0.25s;
     }
     :deep(p) {
+      .textappear();
       // filter: url(#fuzz2);
       margin: 0 auto 1em 0;
+      animation-delay: 0.5s;
+      animation-duration: 1.5s;
     }
   }
 }
@@ -141,11 +153,13 @@ const { stop } = useIntersectionObserver(
 
   transition: all 1s @easeInOutExpo;
   transition-delay: 1s;
+  border: 10rem solid var(--bg);
   .hidden & {
     // transform: scale(0.1);
   }
   .visible & {
     transition-delay: 0s;
+    border: 0rem solid var(--bg);
     // transform: scale(1);
   }
 }
@@ -180,9 +194,26 @@ const { stop } = useIntersectionObserver(
     width: 23em;
     box-shadow: 0 0.125em 1em #2affaa;
     box-shadow: 0 0.125em 1em #ffa38f;
+    box-shadow: 0 0.125em 1em var(--bg2);
+
     opacity: 0.98;
     transition: all 0.3s @easeInOutExpo;
     cursor: pointer;
+
+    .commentin();
+    &:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(2) {
+      animation-delay: 1s;
+    }
+    &:nth-child(3) {
+      animation-delay: 1.75s;
+    }
+    &:nth-child(4) {
+      animation-delay: 2.5s;
+    }
+
     &:hover {
       transform: scale(1.1) !important;
     }
@@ -198,17 +229,15 @@ const { stop } = useIntersectionObserver(
     &:nth-child(1) {
       right: 0;
       top: -2rem;
-      transform: scale(0.8);
     }
     &:nth-child(2) {
       left: -4rem;
-      top: 3rem;
+      top: 4rem;
       // background: #18212b;
     }
     &:nth-child(3) {
       right: -2rem;
-      top: 7rem;
-      transform: scale(1.2);
+      top: 8rem;
       // background: #23182b;
     }
     &:nth-child(4) {

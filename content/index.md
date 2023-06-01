@@ -2,7 +2,7 @@
 
 # Wie is de trol?
 
-In deze game kruip jij in de rol van moderator van een reactieplatform en is het jouw taak om de discussie in goede banen te leiden. En misschien kan Artificiele Intelligentie (AI) je daar wel een handje bij helpen...
+In deze game kruip jij in de rol van _moderator_ van een _reactieplatform_ en is het jouw taak om de discussie in goede banen te leiden. En misschien kan _Artificiele Intelligentie_ (AI) je daar wel een handje bij helpen...
 
 ::
 

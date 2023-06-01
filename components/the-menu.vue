@@ -22,9 +22,12 @@
   z-index: 99;
   .sticky {
     padding: 1em 2.5em 0.75em;
-    padding: 1em 0.5em 0.75em;
+    padding: 1em 0 0.75em;
     margin: 0 auto;
     border-bottom: 0.5px solid transparent;
+    @media (max-width: 80rem) {
+      padding: 0em 2.5em 0.75em;
+    }
     &:after {
       content: "";
       position: absolute;
@@ -58,7 +61,7 @@
   }
 }
 a {
-  margin-left: 2rem;
+  margin-left: 2.5rem;
   text-decoration: none;
   font-weight: 400;
   transition: all 0.5s @easeOutExpo;
@@ -66,14 +69,10 @@ a {
   display: inline-block;
   transform: scale(1);
   transition-delay: 0s;
+  .menudown();
   &:hover {
     text-decoration: underline;
   }
-  // .nottop & {
-  //   transition-delay: 0.5s;
-  //   opacity: 0;
-  //   transform: translateY(-1em);
-  // }
 }
 button {
   @s: 1.2rem;

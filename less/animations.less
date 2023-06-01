@@ -1,5 +1,48 @@
 @import './ease.less';
 
+.textappear() {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  transform: translateY(3rem);
+  opacity: 0;
+  animation: popin 2s @easeInOutExpo 0.5s 1 forwards;
+
+  @keyframes popin {
+    100% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      transform: translateY(0em);
+      opacity: 1;
+    }
+  }
+}
+
+.menudown(){
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    transform: translateY(-1.5rem);
+    opacity: 0;
+    animation: menudown 2s @easeInOutExpo 1s 1 forwards;
+  
+    @keyframes menudown {
+      100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        transform: translateY(0em);
+        opacity: 1;
+      }
+    }
+}
+
+.commentin() {
+  transform: scale(0.25);
+  opacity: 0;
+  animation: commentin 2s @easeInOutExpo 0.5s 1 forwards;
+  @keyframes commentin {
+    100% {
+      transform: translateY(0em);
+      opacity: 1;
+    }
+  }
+}
+
 .overlaybg() {
   animation: overlaybg 1s @easeOutExpo 0s 1 forwards;
   opacity: 0;
@@ -18,55 +61,6 @@
     100% {
       opacity: 1;
       transform: scale(1);
-    }
-  }
-}
-
-.list-enter-active,
-.list-leave-active {
-  transition: all 0.5s @easeInOutSine;
-}
-.list-enter-from,
-.list-leave-to {
-  opacity: 0;
-  transform: translateX(-1em);
-}
-
-
-.fadein(@duration:0.5s, @plusdelay:0, @opacity: 1) {
-  opacity: 0;
-  animation: fadein @duration linear 0s 1 forwards;
-  @keyframes fadein {
-    100% { opacity: @opacity; }
-  }
-  each(range(99), {
-    &:nth-child(@{index}) {
-      animation-delay: @plusdelay + (@index * 0.01s);
-    }
-  });
-}
-
-.fadepopin(@duration: 0.5s, @perdelay: 0.01s, @plusdelay:0, @opend: 1) {
-  opacity: 0;
-  transform: scale(0.8);
-  transform-origin: center;
-  animation: fadein @duration @easeInOutExpo 0s 1 forwards;
-  @keyframes fadein {
-    100% { opacity: @opend; transform: scale(1); }
-  }
-  each(range(99), {
-    &:nth-child(@{index}) {
-      animation-delay: @plusdelay + (@index * @perdelay);
-    }
-  });
-}
-
-.clipopen(@direction: topleft, @duration: .3s) {
-  clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
-  animation: clipopentopleft @duration @easeInOutExpo 0s 1 forwards;
-  @keyframes clipopentopleft {
-    100% { 
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
   }
 }
