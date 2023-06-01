@@ -144,8 +144,8 @@ const { stop } = useIntersectionObserver(
   margin: 0 auto;
   // box-shadow: 0 0 3rem #00ffbf, inset 0 0 3rem #342411;
   box-shadow: inset 0 0 3rem #342411;
-  background: url(/cb.webp);
-  background: url(/bg.jpg);
+  // background: url(/cb.webp);
+  background: url(./bg.jpg);
   // background: url(/yellow.jpg);
   background-size: 100vw;
   background-position: right;

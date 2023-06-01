@@ -1,24 +1,24 @@
 - 
   name: Alliantie Digitaal Samenleven
-  img: /logos/alliantie-digitaal-samenleven.png
+  img: ./logos/alliantie-digitaal-samenleven.png
   url: https://digitaalsamenleven.nl/
 - 
   name: NEMO Kennislink
-  img: /logos/kennislink.png
+  img: ./logos/kennislink.png
   url: https://www.nemokennislink.nl/
 - 
   name: Meertens Instituut
-  img: /logos/meertens-institute.png
+  img: ./logos/meertens-institute.png
   url: https://meertens.knaw.nl/
 - 
   name: Nationale Wetenschapsagenda
-  img: '/logos/nationale-wetenschapsagenda.png'
+  img: ./logos/nationale-wetenschapsagenda.png
   url: https://wetenschapsagenda.nl/
 - 
   name: Netwerk Mediawijsheid
-  img: /logos/netwerk-mediawijsheid.png
+  img: ./logos/netwerk-mediawijsheid.png
   url: https://netwerkmediawijsheid.nl/
 -
   name: Tilburg University
-  img: /logos/tilburg-university.png
+  img: ./logos/tilburg-university.png
   url: https://www.tilburguniversity.edu/
