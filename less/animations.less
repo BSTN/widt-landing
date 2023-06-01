@@ -17,18 +17,18 @@
 
 .menudown(){
   clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-    transform: translateY(-1.5rem);
-    opacity: 0;
-    animation: menudown 2s @easeInOutExpo 1s 1 forwards;
-  
-    @keyframes menudown {
-      100% {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        transform: translateY(0em);
-        opacity: 1;
-      }
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  transform: translateY(-1.5rem);
+  opacity: 0;
+  animation: menudown 2s @easeInOutExpo 1s 1 forwards;
+
+  @keyframes menudown {
+    100% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      transform: translateY(0em);
+      opacity: 1;
     }
+  }
 }
 
 .commentin() {

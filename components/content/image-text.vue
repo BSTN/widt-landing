@@ -155,6 +155,7 @@ const { stop } = useIntersectionObserver(
   transition-delay: 1s;
   border: 10rem solid var(--bg);
   .hidden & {
+    border: 10rem solid var(--bg);
     // transform: scale(0.1);
   }
   .visible & {
