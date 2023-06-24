@@ -1,11 +1,18 @@
 <template>
   <div class="the-menu">
-    <div class="sticky width">
-      <!-- <button></button> -->
-      <div>Wie is de trol?</div>
-      <a href="#intro">introductie</a>
-      <a href="#het-lespakket">lespakket</a>
-      <a href="#over-ons">over ons</a>
+    <div class="sticky">
+      <div class="left">
+        <a>2023 — 2024</a>
+      </div>
+      <div class="center">
+        <a href="#intro">scholen</a>
+        <a href="#het-lespakket">bibliotheken</a>
+        <a href="#over-ons">festivals</a>
+      </div>
+      <div class="right">
+        <a href="#over-ons">blog</a>
+        <a href="#over-ons">over ons</a>
+      </div>
     </div>
   </div>
 </template>
@@ -13,21 +20,26 @@
 <style lang="less" scoped>
 @import "@/less/ease.less";
 .the-menu {
-  text-align: right;
   width: 100%;
   position: sticky;
-  top: -2em;
-  padding-top: 2em;
+  position: fixed;
+  top: 0em;
+  padding-top: 0em;
   transition: all 0.5s;
   z-index: 99;
+  font-family: "exposure";
+  text-transform: uppercase;
+  font-variation-settings: "EXPO" -40;
+  letter-spacing: 0;
+  font-size: 1rem;
+  line-height: 1em;
   .sticky {
     padding: 1em 2.5em 0.75em;
-    padding: 1em 0 0.75em;
+    // padding: 0.75em 2em 0.25em;
     margin: 0 auto;
     border-bottom: 0.5px solid transparent;
-    @media (max-width: 80rem) {
-      padding: 0em 2.5em 0.75em;
-    }
+    display: flex;
+    // color: var(--bg);
     &:after {
       content: "";
       position: absolute;
@@ -39,6 +51,7 @@
       transition: all 0.5s;
     }
     .nottop & {
+      color: var(--fg);
       &:after {
         opacity: 0.2;
       }
@@ -48,58 +61,77 @@
     background: var(--bg);
   }
 }
-.sticky > div {
-  opacity: 0;
-  float: left;
-  font-family: "exposure";
-  transform: translateY(-1em);
-  transition: all 0.3s @easeInOutSine;
-  transform-origin: center top;
-  .nottop & {
-    opacity: 1;
-    transform: translateY(0);
+.left {
+  flex: 1;
+  text-align: left;
+  max-width: 14rem;
+}
+.right {
+  flex: 1;
+  text-align: right;
+  max-width: 14rem;
+}
+.center {
+  text-align: center;
+  flex: 1;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  // line-height: 1em;
+  &:before {
+    content: "voor";
+    position: absolute;
+    top: 0.45rem;
+    font-size: 0.4rem;
+    letter-spacing: 0.05em;
+    left: calc(50% - 2.5em);
+    width: 5em;
+    text-align: center;
+  }
+  &:after {
+    content: "2023—2024";
+    position: absolute;
+    bottom: 0.6rem;
+    font-size: 0.4rem;
+    letter-spacing: 0.05em;
+    left: calc(50% - 2.5em);
+    width: 5em;
+    text-align: center;
   }
 }
+
 a {
-  margin-left: 2.5rem;
+  margin-top: -0.25rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  font-weight: 400;
   transition: all 0.5s @easeOutExpo;
   position: relative;
   display: inline-block;
   transform: scale(1);
   transition-delay: 0s;
+  font-size: 0.8em;
+  overflow: auto;
   .menudown();
   &:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    font-variation-settings: "EXPO" -100;
+    color: var(--fg);
+    // text-shadow: 0 0 1em var(--link);
+    // letter-spacing: 0.1em;
   }
-}
-button {
-  @s: 1.2rem;
-  width: @s;
-  height: @s;
-  margin-right: 1rem;
-  border-radius: 100%;
-  padding: 0;
-  vertical-align: top;
-  position: relative;
-  margin-top: 0.125rem;
-  border: 2px solid var(--fg);
-  float: left;
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    background: var(--fg);
-    border: 0.15rem solid var(--bg);
-    box-sizing: border-box;
+  &:nth-child(1) {
+    animation-delay: 0s;
   }
-  &:hover {
-    --fg: var(--link);
+  &:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.4s;
   }
 }
 </style>

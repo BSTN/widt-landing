@@ -2,18 +2,7 @@
   <section class="image-text" ref="target" :class="position">
     <div class="row width">
       <div class="image">
-        <!-- image -->
         <div class="img">
-          <!-- comments -->
-          <div
-            class="comments"
-            v-if="type === 'comments' && position === 'visible'"
-          >
-            <div v-for="comment in comments" class="comment">
-              <div class="date">{{ comment.date }}</div>
-              <div class="commenttext">{{ comment.text }}</div>
-            </div>
-          </div>
           <div class="avatar" v-if="type === 'avatar'">
             <img src="/avatar1.png" />
           </div>
@@ -26,7 +15,6 @@
   </section>
 </template>
 <script lang="ts" setup>
-import comments from "@/content/comments.yml";
 const { type } = defineProps({
   type: {
     type: [String],
@@ -51,10 +39,33 @@ const { stop } = useIntersectionObserver(
 .image-text {
   margin: 0 auto;
   position: relative;
+  z-index: 2;
+  // box-shadow: inset 0 0 4rem pink;
+  // box-shadow: 0 0 4rem pink;
+  // border-bottom: 1px solid var(--fg);
   &:first-child {
+    box-shadow: none;
     margin-top: -4rem;
     .row {
       min-height: 80vh;
+    }
+  }
+  &.visible {
+    :deep(h1),
+    :deep(h2),
+    :deep(h3),
+    :deep(h4),
+    :deep(h5),
+    :deep(h6),
+    :deep(p) {
+      font-variation-settings: "EXPO" -30;
+      &:hover {
+        font-variation-settings: "EXPO" -100;
+      }
+    }
+    :deep(h1) {
+      font-style: italic;
+      // font-variation-settings: "EXPO" 100;
     }
   }
   .row {
@@ -65,19 +76,6 @@ const { stop } = useIntersectionObserver(
     @media (max-width: 60rem) {
       display: block;
     }
-    // border-left: 1px solid #fff;
-    // border-right: 1px solid #fff;
-    // &:after {
-    //   content: "";
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 0.5em;
-    //   background: url(/bg.jpg);
-    //   background-attachment: fixed;
-    //   background-size: 100vw;
-    // }
   }
   .image {
     min-width: 50%;
@@ -88,7 +86,7 @@ const { stop } = useIntersectionObserver(
     align-self: center;
     padding-bottom: 2rem;
     font-size: 24px;
-    padding-left: 2em;
+    // padding-left: 4em;
     :deep(p) {
       width: 22em;
       max-width: 100%;
@@ -115,6 +113,7 @@ const { stop } = useIntersectionObserver(
       margin: 0 auto 1em 0;
       animation-delay: 0.5s;
       animation-duration: 1.5s;
+      font-size: 1.25em;
     }
   }
 }
@@ -126,6 +125,7 @@ const { stop } = useIntersectionObserver(
   }
   .text {
     order: 1;
+    padding-left: 4rem !important;
     :deep(p) {
       margin: 0 0 1rem auto;
     }
@@ -138,20 +138,40 @@ const { stop } = useIntersectionObserver(
   height: 20rem;
   background: #222;
   border-radius: 100%;
+  border-radius: 2rem;
   // clip-path: polygon(0% 20%, 30% 0%, 100% 10%, 90% 60%, 50% 90%, 20% 70%);
 
   display: block;
   margin: 0 auto;
   // box-shadow: 0 0 3rem #00ffbf, inset 0 0 3rem #342411;
   box-shadow: inset 0 0 3rem #342411;
-  // background: url(/cb.webp);
-  background: url("@/public/bg.jpg");
-  // background: url(/yellow.jpg);
+  // box-shadow: inset 0 0 3rem #784200;
+  background: url(@/public/cb.webp);
+  background: url(@/public/cb2.jpg);
+  background: url(@/public/cb3.webp);
+  background: url(@/public/cb4.jpg);
+  // background: url(@/public/grblue.jpg);
+  // background: url(@/public/complex.jpg);
+  // background: url(@/public/pinki.png);
+  // background: url(@/public/pink.jpg);
+  // background: url(@/public/small.jpg);
+  // background: url(@/public/bg.jpg);
+  background: url(@/public/yellow.jpg);
+  // background: url(@/public/mess.jpg);
+  background: url(@/public/deeppurple.jpg);
+  background: url(@/public/violet.jpg);
+  background: url(@/public/greygrid.jpg);
+  background: url(@/public/blue.jpg);
+  // background: url(@/public/sharppurple.jpg);
+  // background: url(@/public/sharppurple2.jpg);
+  // background: url(@/public/sharppurple-xl2.jpg);
+  background-size: 100vw;
+  // background: url(@/public/bling2.jpg);
   background-size: 100vw;
   background-position: right;
   background-attachment: fixed;
 
-  transition: all 1s @easeInOutExpo;
+  transition: all 2s @easeInOutExpo;
   transition-delay: 1s;
   border: 10rem solid var(--bg);
   .hidden & {
@@ -159,113 +179,30 @@ const { stop } = useIntersectionObserver(
     // transform: scale(0.1);
   }
   .visible & {
-    transition-delay: 0s;
+    transition-delay: 1s;
     border: 0rem solid var(--bg);
     // transform: scale(1);
   }
 }
 
-.comments {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  .comment {
-    position: absolute;
-    // dark
-    background: #211e20;
-    color: #fff7dd;
-    // light
-    background: #fdfcf7;
-    color: #332e1c;
-    // blue
-    background: #ffffff;
-    color: var(--fg);
-    // text-shadow: 0 0 0.125em #2affaa;
-    // colours
-    // background: #103b5e;
-    // background: #1d2a27;
-    // background: #141414;
-    // color: #fff7dd;
-
-    font-size: 14px;
-    line-height: 1.4em;
-    padding: 1em 1.5em 1.5em;
-    border-radius: 0 1em 1em 1em;
-    width: 23em;
-    box-shadow: 0 0.125em 1em #2affaa;
-    box-shadow: 0 0.125em 1em #ffa38f;
-    box-shadow: 0 0.125em 1em var(--bg2);
-
-    opacity: 0.98;
-    transition: all 0.3s @easeInOutExpo;
-    cursor: pointer;
-
-    .commentin();
-    &:nth-child(1) {
-      animation-delay: 0.5s;
-    }
-    &:nth-child(2) {
-      animation-delay: 1s;
-    }
-    &:nth-child(3) {
-      animation-delay: 1.75s;
-    }
-    &:nth-child(4) {
-      animation-delay: 2.5s;
-    }
-
-    &:hover {
-      transform: scale(1.1) !important;
-    }
-    .date {
-      font-size: 0.8em;
-      opacity: 0.5;
-      margin-bottom: 0.25em;
-      text-align: right;
-    }
-    &:nth-child(even) {
-      border-radius: 0.5em 0 0.5em 0.5em;
-    }
-    &:nth-child(1) {
-      right: 0;
-      top: -2rem;
-    }
-    &:nth-child(2) {
-      left: -4rem;
-      top: 4rem;
-      // background: #18212b;
-    }
-    &:nth-child(3) {
-      right: -2rem;
-      top: 8rem;
-      // background: #23182b;
-    }
-    &:nth-child(4) {
-      left: 0;
-      top: 13rem;
-      // background: #5f3248;
-    }
-  }
-}
 .image-text {
   &:nth-child(2) .img {
-    // background-image: url(/cb3.webp);
-    // background-image: url(/yellow.jpg);
-    // background-image: url(/red.jpg);
-    // background-image: url(/pink.jpg);
+    // background-image: url(@/public/cb3.webp);
+    // background-image: url(@/public/yellow.jpg);
+    // background-image: url(@/public/red.jpg);
+    // background-image: url(@/public/pink.jpg);
     background-position: center;
   }
   &:nth-child(3) .img {
-    // background-image: url(/grey.jpg);
-    // background-image: url(/grblue.jpg);
+    // background-image: url(@/public/grey.jpg);
+    // background-image: url(@/public/grblue.jpg);
   }
   &:nth-child(4) .img {
-    // background-image: url(/mess2.jpg);
+    // background-image: url(@/public/mess2.jpg);
     background-position: center;
   }
   &:nth-child(5) .img {
-    // background-image: url(/pink.jpg);
+    // background-image: url(@/public/pink.jpg);
     background-position: center;
   }
 }

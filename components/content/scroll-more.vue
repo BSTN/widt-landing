@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll-more">lees meer</div>
+  <div class="scroll-more"><p>lees meer</p></div>
 </template>
 <script lang="ts" setup></script>
 <style lang="less" scoped>

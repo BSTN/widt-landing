@@ -9,16 +9,18 @@ html, body {
   font-family: 'Barlow', 'helvetica neue', Helvetica, sans-serif;
   font-family: 'Authentic Sans', 'helvetica neue', Helvetica, sans-serif;
   font-family: 'Rubik', 'helvetica neue', Helvetica, sans-serif;
-  // font-family: 'Archivo', 'helvetica neue', Helvetica, sans-serif;
+  font-family: 'Archivo', 'helvetica neue', Helvetica, sans-serif;
   font-weight: normal;
   font-size: 22px;
+  // font-size: 1.2vw;
   background: var(--bg);
   color:var(--fg);
   line-height: 1.4em;
+  --exposure:-30;
 }
 
 body {
-  box-shadow: inset 0 0 10rem var(--bg2);
+  // box-shadow: inset 0 0 10rem var(--bg2);
 }
 
 .width {
@@ -126,22 +128,27 @@ label {
   }
 }
 
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'exposure';
+  // letter-spacing: 0.025em;
+  // font-family: 'Averia Serif Libre';
+  font-weight: 800;
+  line-height: 1em;
+  max-width: calc(100% - 2rem);
+  font-variation-settings: "EXPO" var(--exposure);
+  transition: font-variation-settings 1s;
+}
 h1 {
   font-size: 3em;
   margin-top: 3em;
   margin-bottom: 2em;
   text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  font-family: 'exposure';
-  font-weight: 100;
-  line-height: 1em;
-  max-width: calc(100% - 2rem);
+  font-family: 'arkes';
 }
 
 p {
   width: 32em;
   margin: 0 auto 1em;
-  line-height: 1.8em;
+  line-height: 1.4em;
 }

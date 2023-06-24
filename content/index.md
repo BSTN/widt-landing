@@ -1,10 +1,10 @@
-::imageText{type=comments}
+::landingTitle
 
-# Wie is de trol?
-
-In deze game kruip jij in de rol van _moderator_ van een _reactieplatform_ en is het jouw taak om de discussie in goede banen te leiden. En misschien kan _Artificiele Intelligentie_ (AI) je daar wel een handje bij helpen...
+Zou jij een trol herkennen tussen de reacties op een online artikel? En denk je dat een _getrainde computer_ dat ook zou kunnen? Leer hier meer over _online reageren_, _modereren_ en _Kunstmatige Intelligentie!_
 
 ::
+
+<!-- :searchBlob -->
 
 :scrollMore
 
@@ -19,11 +19,19 @@ Maar in online discussies gaat dit vaak mis: mensen praten er vaker langs elkaar
 Om de discussie in goede banen te leiden hebben online platforms vaak moderatoren in dienst. Tegenwoordig krijgen die vaak hulp van Artificiële Intelligentie (AI).
 ::
 
-# Het lespakket
+# Voor scholen
 
 Je kan dit spel doen in de klas! Het duurt ongeveer 45m en past daardoor goed in 1 lesuur. Klassikaal scherm en mobiele telefoons zijn nodig om het spel te kunnen spelen.
 
 Download [hier](/instructies.pdf) de volledige instructies.
+
+# Voor Bibliotheken
+
+We gaan bibliotheken langs. meld je hier aan.
+
+# Voor Festivals
+
+Wil je onze bots testen? Kom naar onze stand op de volgende festivals:
 
 # over ons
 

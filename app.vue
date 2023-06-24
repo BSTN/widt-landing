@@ -1,7 +1,5 @@
 <template>
   <div class="app" ref="text" :class="position">
-    <textblur filterid="fuzz" blur="3" sharpen="100"></textblur>
-    <textblur filterid="fuzz2" blur="1" sharpen="50"></textblur>
     <theMenu></theMenu>
     <ContentDoc />
   </div>
