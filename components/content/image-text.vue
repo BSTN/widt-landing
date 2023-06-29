@@ -40,15 +40,19 @@ const { stop } = useIntersectionObserver(
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  background: var(--bg);
   // box-shadow: inset 0 0 4rem pink;
   // box-shadow: 0 0 4rem pink;
   // border-bottom: 1px solid var(--fg);
-  &:first-child {
-    box-shadow: none;
-    margin-top: -4rem;
-    .row {
-      min-height: 80vh;
-    }
+  :deep(h1),
+  :deep(h2),
+  :deep(h3),
+  :deep(h4),
+  :deep(h5),
+  :deep(h6),
+  :deep(p) {
+    transition: all 2s;
+    font-variation-settings: "EXPO" 100;
   }
   &.visible {
     :deep(h1),
@@ -59,9 +63,6 @@ const { stop } = useIntersectionObserver(
     :deep(h6),
     :deep(p) {
       font-variation-settings: "EXPO" -30;
-      &:hover {
-        font-variation-settings: "EXPO" -100;
-      }
     }
     :deep(h1) {
       font-style: italic;
@@ -69,7 +70,7 @@ const { stop } = useIntersectionObserver(
     }
   }
   .row {
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -146,25 +147,7 @@ const { stop } = useIntersectionObserver(
   // box-shadow: 0 0 3rem #00ffbf, inset 0 0 3rem #342411;
   box-shadow: inset 0 0 3rem #342411;
   // box-shadow: inset 0 0 3rem #784200;
-  background: url(@/public/cb.webp);
-  background: url(@/public/cb2.jpg);
-  background: url(@/public/cb3.webp);
-  background: url(@/public/cb4.jpg);
-  // background: url(@/public/grblue.jpg);
-  // background: url(@/public/complex.jpg);
-  // background: url(@/public/pinki.png);
-  // background: url(@/public/pink.jpg);
-  // background: url(@/public/small.jpg);
-  // background: url(@/public/bg.jpg);
-  background: url(@/public/yellow.jpg);
-  // background: url(@/public/mess.jpg);
-  background: url(@/public/deeppurple.jpg);
-  background: url(@/public/violet.jpg);
-  background: url(@/public/greygrid.jpg);
-  background: url(@/public/blue.jpg);
-  // background: url(@/public/sharppurple.jpg);
-  // background: url(@/public/sharppurple2.jpg);
-  // background: url(@/public/sharppurple-xl2.jpg);
+  background: var(--bgimg);
   background-size: 100vw;
   // background: url(@/public/bling2.jpg);
   background-size: 100vw;
@@ -172,38 +155,14 @@ const { stop } = useIntersectionObserver(
   background-attachment: fixed;
 
   transition: all 2s @easeInOutExpo;
-  transition-delay: 1s;
-  border: 10rem solid var(--bg);
+  transition-delay: 0s;
+  border: 1rem solid var(--bg);
   .hidden & {
-    border: 10rem solid var(--bg);
-    // transform: scale(0.1);
+    // border: 10rem solid var(--bg);
   }
   .visible & {
     transition-delay: 1s;
     border: 0rem solid var(--bg);
-    // transform: scale(1);
-  }
-}
-
-.image-text {
-  &:nth-child(2) .img {
-    // background-image: url(@/public/cb3.webp);
-    // background-image: url(@/public/yellow.jpg);
-    // background-image: url(@/public/red.jpg);
-    // background-image: url(@/public/pink.jpg);
-    background-position: center;
-  }
-  &:nth-child(3) .img {
-    // background-image: url(@/public/grey.jpg);
-    // background-image: url(@/public/grblue.jpg);
-  }
-  &:nth-child(4) .img {
-    // background-image: url(@/public/mess2.jpg);
-    background-position: center;
-  }
-  &:nth-child(5) .img {
-    // background-image: url(@/public/pink.jpg);
-    background-position: center;
   }
 }
 

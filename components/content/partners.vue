@@ -20,9 +20,9 @@ import partners from "@/content/partners.yml";
   }
 }
 .partner {
-  padding: 0 2rem 4rem;
+  padding: 0 1rem 3rem;
   img {
-    width: 5rem;
+    width: 8rem;
     max-height: 3rem;
     object-fit: contain;
     mix-blend-mode: darken;

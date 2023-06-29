@@ -2,7 +2,8 @@
   <div class="the-menu">
     <div class="sticky">
       <div class="left">
-        <a>2023 — 2024</a>
+        <a>intro</a>
+        <a>blog</a>
       </div>
       <div class="center">
         <a href="#intro">scholen</a>
@@ -10,7 +11,6 @@
         <a href="#over-ons">festivals</a>
       </div>
       <div class="right">
-        <a href="#over-ons">blog</a>
         <a href="#over-ons">over ons</a>
       </div>
     </div>
