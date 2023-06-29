@@ -9,8 +9,8 @@
   right: 0;
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
-  padding: 1em;
+  font-size: 0.6rem;
+  padding: 0.5em;
   pointer-events: none;
   opacity: 1;
   transition: all 0.5s @easeInOutExpo;

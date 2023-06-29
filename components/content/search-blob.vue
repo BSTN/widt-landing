@@ -20,7 +20,7 @@
 <script lang="ts" setup>
 import { useMouse } from "@vueuse/core";
 const size = 200;
-const clip = 160;
+const clip = 120;
 const { x, y } = useMouse();
 const maxy = computed(() => (y.value < 0 ? 0 : y.value));
 let prevx = 0;
@@ -36,7 +36,7 @@ function clamp(val: number, min: number, max: number): number {
 }
 const r = computed(() => {
   if (y.value < clip) {
-    return Math.log(clamp(y.value - clip / 2, 0, 1000) / clip + 1) * size + 5;
+    return Math.log(clamp(y.value - clip / 2, 0, 2000) / clip + 1) * size;
   }
   return size / 2;
 });

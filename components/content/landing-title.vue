@@ -47,7 +47,7 @@ const style = computed(() => {
   width: @s;
   height: @s;
   overflow: visible;
-  z-index: 2;
+  z-index: 10;
   .commentin();
   // display: none;
   @media (orientation: portrait) {

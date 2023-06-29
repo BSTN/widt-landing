@@ -87,6 +87,7 @@ const { stop } = useIntersectionObserver(
     align-self: center;
     padding-bottom: 2rem;
     font-size: 24px;
+    max-width: 40vw;
     // padding-left: 4em;
     :deep(p) {
       width: 22em;

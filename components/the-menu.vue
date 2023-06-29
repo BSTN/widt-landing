@@ -53,8 +53,15 @@
     .nottop & {
       box-shadow: 0 0 1rem rgba(#000, 0.2);
       color: var(--fg);
+      padding: 0.5em 1em 0;
       &:after {
         opacity: 0.2;
+      }
+      .center {
+        &:before,
+        &:after {
+          opacity: 0;
+        }
       }
     }
   }
@@ -78,6 +85,10 @@
   font-size: 0.75em;
   letter-spacing: 0.1em;
   // line-height: 1em;
+  &:before,
+  &:after {
+    transition: all 0.15s;
+  }
   &:before {
     content: "voor";
     position: absolute;

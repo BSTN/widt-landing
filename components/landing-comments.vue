@@ -32,12 +32,12 @@ const interval = setInterval(() => {
   line-height: 1.3em;
   font-weight: 500;
   height: calc(80vh + 2rem);
-  z-index: 12;
+  z-index: 2;
 
-  --bg: #111;
+  --bg: #2e2e2e;
   --fg: #eee;
-  --opacity: 0.8;
-  @media (max-width: 40rem) {
+  --opacity: 0.9;
+  @media (max-width: 60rem) {
     position: relative;
     height: auto;
     .comment {
