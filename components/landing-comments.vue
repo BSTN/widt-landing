@@ -34,8 +34,8 @@ const interval = setInterval(() => {
   height: calc(80vh + 2rem);
   z-index: 2;
 
-  --bg: #2e2e2e;
-  --fg: #eee;
+  // --bg: #2e2e2e;
+  // --fg: #eee;
   --opacity: 0.9;
   @media (max-width: 60rem) {
     position: relative;
@@ -68,7 +68,6 @@ const interval = setInterval(() => {
     transition: all 1s @easeInOutExpo;
     cursor: pointer;
 
-    // .commentin();
     opacity: 0;
     transform: scale(0.25);
     pointer-events: none;

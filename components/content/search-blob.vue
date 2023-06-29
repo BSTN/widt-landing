@@ -61,7 +61,7 @@ const r = computed(() => {
   top: -100px;
   width: 200px;
   height: 200px;
-  box-shadow: inset 0 0 1rem #222;
+  box-shadow: inset 0 0 1rem #000;
   border-radius: 100%;
   z-index: 1;
 }

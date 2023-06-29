@@ -60,7 +60,7 @@
       .center {
         &:before,
         &:after {
-          opacity: 0;
+          opacity: 0 !important;
         }
       }
     }
@@ -88,6 +88,7 @@
   &:before,
   &:after {
     transition: all 0.15s;
+    .fadein();
   }
   &:before {
     content: "voor";
@@ -144,6 +145,18 @@ a {
   }
   &:nth-child(5) {
     animation-delay: 0.4s;
+  }
+}
+
+@media (max-width: 40rem) {
+  .the-menu {
+    padding: 0;
+    .sticky {
+      padding: 0.5em;
+    }
+  }
+  .center {
+    display: none;
   }
 }
 </style>

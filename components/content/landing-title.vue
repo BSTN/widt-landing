@@ -48,8 +48,7 @@ const style = computed(() => {
   height: @s;
   overflow: visible;
   z-index: 10;
-  .commentin();
-  // display: none;
+  .logoin();
   @media (orientation: portrait) {
     @s: 90vw;
     left: calc(50% - @s / 2);
@@ -82,7 +81,10 @@ const style = computed(() => {
   line-height: 1.4em;
   z-index: 2;
   @media (max-width: 40rem) {
-    font-size: 6vw;
+    font-size: 1rem;
+    :deep(p) {
+      line-height: 1.4em !important;
+    }
   }
   // color: var(--bg);
   // padding-top: 90vh;

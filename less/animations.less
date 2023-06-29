@@ -30,16 +30,27 @@
   }
 }
 
-.commentin() {
-  // transform: scale(0.25);
-  // opacity: 0;
-  // animation: commentin 2s @easeInOutExpo 0s 1 forwards;
-  // @keyframes commentin {
-  //   100% {
-  //     transform: translateY(0em);
-  //     opacity: 1;
-  //   }
-  // }
+.fadein() {
+  animation: fadein 1s @easeOutExpo 1s 1 forwards;
+  opacity: 0;
+
+  @keyframes fadein {
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.logoin() {
+  transform: scale(0.8) rotateY(0deg);
+  opacity: 0;
+  animation: commentin 2s @easeInOutExpo .5s 1 forwards;
+  @keyframes commentin {
+    100% {
+      transform: scale(1) rotateY(360deg);
+      opacity: 1;
+    }
+  }
 }
 
 .overlaybg() {

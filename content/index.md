@@ -55,7 +55,7 @@ Probeer het uit! Beat the bot. Schrijf de meest constructieve bijdrage die je ku
 
 [Lees hier](https://meertens.knaw.nl/2021/06/24/hoe-kan-ai-bijdragen-aan-een-gezonder-debat/) een interview met Cedric Waterschoot over zijn onderzoek.
 
-# over ons
+# Over ons
 
 ## Wie is de trol?
 
