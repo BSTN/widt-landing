@@ -18,7 +18,7 @@ Maar in online discussies gaat dit vaak mis: mensen praten er vaker langs elkaar
 ::
 
 ::imageText{class=left type="avatar"}
-Om de discussie in goede banen te leiden hebben online platforms vaak moderatoren in dienst. Tegenwoordig krijgen die vaak hulp van Artificiële Intelligentie (AI).
+Om de discussie in goede banen te leiden hebben online platforms vaak moderatoren in dienst. Tegenwoordig krijgen die vaak hulp van _Artificiële Intelligentie (AI)_.
 ::
 
 ::imageText{class=right}
@@ -29,7 +29,7 @@ Door het spelen van deze game krijg je meer inzicht in de wijze waarop mensen on
 
 ## lespakket
 
-Wie is de trol? wordt in klasverband gespeeld. De game bestaat uit 6 hoofdstukjes die bestaan uit een korte video-uitleg die getoond kan worden op een klassikaal scherm; daarna volgen steeds opdrachten die leerlingen individueel of in tweetallen uitvoeren op hun telefoon.
+_Wie is de trol?_ wordt in klasverband gespeeld. De game bestaat uit 6 hoofdstukjes die bestaan uit een korte video-uitleg die getoond kan worden op een klassikaal scherm; daarna volgen steeds opdrachten die leerlingen individueel of in tweetallen uitvoeren op hun telefoon.
 
 De uitslag van de individuele opdrachten wordt vervolgens getoond op het grote scherm en kan gebruikt worden voor een klassikale discussie.
 

@@ -33,6 +33,17 @@ const interval = setInterval(() => {
   font-weight: 500;
   height: calc(80vh + 2rem);
   z-index: 12;
+
+  --bg: #111;
+  --fg: #eee;
+  --opacity: 0.8;
+  @media (max-width: 40rem) {
+    position: relative;
+    height: auto;
+    .comment {
+      position: relative;
+    }
+  }
   .comment {
     position: absolute;
     color: var(--fg);
@@ -42,19 +53,18 @@ const interval = setInterval(() => {
     // background: #103b5e;
     // background: #1d2a27;
     // background: #141414;
-    color: #cb4a93;
+    // color: #cb4a93;
 
     font-size: 14px;
     line-height: 1.4em;
     padding: 1em 1.5em 1.5em;
-    border-radius: 0 0.25em 0.25em 0.25em;
+    border-radius: 0 0.5em 0.5em 0.5em;
     width: 23em;
     // box-shadow: 0 0.125em 0.15em #77ff80;
     // box-shadow: 0 0.125em 0.15em rgba(#222, 0.9);
     // box-shadow: 0 0.125em 1em #ffa38f;
     // box-shadow: 0 0.125em 1em var(--bg2);
 
-    opacity: 0.98;
     transition: all 1s @easeInOutExpo;
     cursor: pointer;
 
@@ -66,7 +76,7 @@ const interval = setInterval(() => {
     &:before {
       content: "";
       position: absolute;
-      left: -0.5rem;
+      left: calc(-0.5rem + 1px);
       top: 0rem;
       width: 0.5rem;
       height: 0.5rem;
@@ -74,7 +84,7 @@ const interval = setInterval(() => {
       background: var(--bg);
     }
     &.active {
-      opacity: 1;
+      opacity: var(--opacity);
       transform: scale(1);
       pointer-events: auto;
     }
@@ -98,7 +108,7 @@ const interval = setInterval(() => {
       transform: scale(1.2) !important;
       transition-duration: 0.2s;
       pointer-events: auto;
-      opacity: 1;
+      opacity: var(--opacity);
     }
     &:nth-child(4n + 1) {
       right: 5vw;

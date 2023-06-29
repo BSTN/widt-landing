@@ -4,10 +4,10 @@
     <div class="logo">
       <logo :style="style"></logo>
     </div>
+    <LandingComments></LandingComments>
     <div class="text">
       <slot></slot>
     </div>
-    <LandingComments></LandingComments>
   </div>
 </template>
 <script lang="ts" setup>
@@ -35,7 +35,7 @@ const style = computed(() => {
   background-position: center;
   padding-top: 4rem;
 
-  z-index: 20;
+  z-index: 0;
 }
 
 .logo {
@@ -76,9 +76,10 @@ const style = computed(() => {
   width: 28em;
   max-width: 100%;
   margin: 2rem auto 0;
-  padding: 1em 1.5rem 1.25em;
+  padding: 6em 1.5rem 6em;
   font-size: 2em;
-  line-height: 1.2em;
+  font-size: 1.5em;
+  line-height: 1.4em;
   z-index: 2;
   @media (max-width: 40rem) {
     font-size: 6vw;
@@ -91,7 +92,7 @@ const style = computed(() => {
     max-width: 100%;
     font-variation-settings: "EXPO" 100;
     transition: all 0.3s;
-    line-height: 1.4em;
+    line-height: 1.8em;
 
     .nottop & {
       transition: all 3s;

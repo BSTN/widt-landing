@@ -20,10 +20,10 @@ import partners from "@/content/partners.yml";
   }
 }
 .partner {
-  padding: 0 1rem 3rem;
+  padding: 0 2rem 3rem;
   img {
-    width: 8rem;
-    max-height: 3rem;
+    width: 12rem;
+    max-height: 6rem;
     object-fit: contain;
     mix-blend-mode: darken;
     margin-bottom: 2.5rem;

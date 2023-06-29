@@ -40,17 +40,18 @@
     border-bottom: 0.5px solid transparent;
     display: flex;
     // color: var(--bg);
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      border-bottom: 0.5px solid var(--fg);
-      opacity: 0;
-      transition: all 0.5s;
-    }
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   // border-bottom: 0.5px solid var(--fg);
+    //   opacity: 0;
+    //   transition: all 0.5s;
+    // }
     .nottop & {
+      box-shadow: 0 0 1rem rgba(#000, 0.2);
       color: var(--fg);
       &:after {
         opacity: 0.2;
