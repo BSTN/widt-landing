@@ -54,6 +54,8 @@ const r = computed(() => {
   background: var(--bgimg);
   z-index: 1;
   background-size: 100vw;
+  background-attachment: fixed;
+  background-position: center;
 }
 .shadow {
   position: absolute;
