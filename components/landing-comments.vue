@@ -27,12 +27,13 @@ const interval = setInterval(() => {
   width: 100%;
   display: block;
   margin-top: 3rem;
-  font-family: "JetBrains Mono";
-  // font-family: "roboto mono";
+  font-family: "jetbrainsmono";
   line-height: 1.3em;
   font-weight: 500;
   height: calc(80vh + 2rem);
   z-index: 2;
+  opacity: 0;
+  .fadein();
 
   // --bg: #2e2e2e;
   // --fg: #eee;

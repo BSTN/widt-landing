@@ -38,6 +38,9 @@ const r = computed(() => {
   if (y.value < clip) {
     return Math.log(clamp(y.value - clip / 2, 0, 2000) / clip + 1) * size;
   }
+  if (y.value > 2000) {
+    return 0;
+  }
   return size / 2;
 });
 </script>
