@@ -6,9 +6,9 @@
         <a href="/#blog">blog</a>
       </div>
       <div class="center">
-        <a href="#voor-scholen">scholen</a>
-        <a href="#voor-bibliotheken">bibliotheken</a>
-        <a href="#voor-festivals">festivals</a>
+        <a href="/#voor-scholen">scholen</a>
+        <a href="/#voor-bibliotheken">bibliotheken</a>
+        <a href="/#voor-festivals">festivals</a>
       </div>
       <div class="right">
         <a href="#over-ons">over ons</a>
