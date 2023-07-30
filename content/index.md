@@ -57,7 +57,7 @@ Promovendus Cedric Waterschoot ontwikkelde een constructiviteitsbot. Voor het on
 
 Het computermodel leert door het vinden van patronen in de reacties die als constructief zijn aangemerkt. Welke patronen dat zijn is voor de mens onzichtbaar, oftewel: een ‘black box’.
 
-Probeer het uit! Beat the bot. Schrijf de meest constructieve bijdrage die je kunt bedenken. De top-5 van meest constructieve reacties volgens de bot worden hieronder getoond.
+Probeer het uit en Beat the bot! Schrijf _de meest constructieve bijdrage_ die je kunt bedenken. De top-5 van meest constructieve reacties volgens de bot worden binnenkort hieronder getoond.
 
 [Lees hier](https://meertens.knaw.nl/2021/06/24/hoe-kan-ai-bijdragen-aan-een-gezonder-debat/) een interview met Cedric Waterschoot over zijn onderzoek.
 
