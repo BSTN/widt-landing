@@ -2,8 +2,8 @@
   <div class="the-menu">
     <div class="sticky">
       <div class="left">
-        <a>intro</a>
-        <a>blog</a>
+        <a href="/">intro</a>
+        <a href="/#blog">blog</a>
       </div>
       <div class="center">
         <a href="#intro">scholen</a>
@@ -114,6 +114,7 @@
 
 a {
   margin-top: -0.25rem;
+  letter-spacing: 0.05em;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: all 0.5s @easeOutExpo;
@@ -127,7 +128,8 @@ a {
   &:hover {
     // text-decoration: underline;
     font-variation-settings: "EXPO" -100;
-    color: var(--fg);
+    // color: var(--fg);
+    color: var(--link);
     // text-shadow: 0 0 1em var(--link);
     // letter-spacing: 0.1em;
   }

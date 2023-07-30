@@ -1,3 +1,7 @@
+---
+title: achtergrond
+---
+
 # Introductie: Het begin van internet
 
 Lees meer over het ontstaan van internet op NEMO Kennislink:

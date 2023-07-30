@@ -25,6 +25,8 @@ Om de discussie in goede banen te leiden hebben online platforms vaak moderatore
 Door het spelen van deze game krijg je meer inzicht in de wijze waarop mensen online discussies voeren en leer je om met hulp van AI de discussie niet te laten ontsporen.
 ::
 
+---
+
 # Voor scholen
 
 ## lespakket
@@ -33,13 +35,17 @@ _Wie is de trol?_ wordt in klasverband gespeeld. De game bestaat uit 6 hoofdstuk
 
 De uitslag van de individuele opdrachten wordt vervolgens getoond op het grote scherm en kan gebruikt worden voor een klassikale discussie.
 
-In de handleiding voor docenten (pdf) staan suggesties voor discussie, een begrippenlijst en meer informatie over het onderzoeksproject.
+In de handleiding voor docenten (binnenkort hier te vinden) staan suggesties voor discussie, een begrippenlijst en meer informatie over het onderzoeksproject.
+
+---
 
 # Voor Bibliotheken
 
 ## Dialoogavonden
 
-Voor bibliotheken organiseren we in samenwerking met Alliantie Digitaal Samenleven en NEMO Kennislink zogenaamde _Dialoogavonden_. Tijdens een Dialoogavond gaan de aanwezigen onder leiding van een moderator in gesprek over onlinediscussievoering en hoe je met hulp van Artificiële Intelligentie (AI) dit soort discussies in goede banen kunt leiden.
+Voor bibliotheken organiseren we in samenwerking met [Alliantie Digitaal Samenleven](https://digitaalsamenleven.nl/) en [NEMO Kennislink](https://www.nemokennislink.nl/) zogenaamde _Dialoogavonden_. Tijdens een Dialoogavond gaan de aanwezigen onder leiding van een moderator in gesprek over onlinediscussievoering en hoe je met hulp van Artificiële Intelligentie (AI) dit soort discussies in goede banen kunt leiden.
+
+---
 
 # Voor Festivals
 
@@ -55,6 +61,14 @@ Probeer het uit! Beat the bot. Schrijf de meest constructieve bijdrage die je ku
 
 [Lees hier](https://meertens.knaw.nl/2021/06/24/hoe-kan-ai-bijdragen-aan-een-gezonder-debat/) een interview met Cedric Waterschoot over zijn onderzoek.
 
+---
+
+# Blog
+
+:blog
+
+---
+
 # Over ons
 
 ## Wie is de trol?
@@ -67,3 +81,7 @@ De game is ontwikkeld door [Basten Stokhuyzen](https://bstn.nl) in samenwerking 
 Bij Wie is de trol? zijn de volgende organisaties aangesloten:
 
 :partners
+
+::hidden
+Meer [Achtergrond informatie](/achtergrond).
+::
