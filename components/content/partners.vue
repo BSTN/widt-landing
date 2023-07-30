@@ -1,7 +1,12 @@
 <template>
   <div class="partners">
     <div class="width">
-      <a :href="item.url" class="partner" v-for="item in partners">
+      <a
+        :href="item.url"
+        target="_blank"
+        class="partner"
+        v-for="item in partners"
+      >
         <img :src="item.img" />
         <div class="name">{{ item.name }}</div>
       </a>
