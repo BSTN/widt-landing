@@ -11,7 +11,7 @@
         <a href="/#voor-festivals">festivals</a>
       </div>
       <div class="right">
-        <a href="#over-ons">over ons</a>
+        <a href="/#over-ons">over ons</a>
       </div>
     </div>
   </div>

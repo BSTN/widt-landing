@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <p>Vanaf September 2023 lees je meer over <b>Wie is de trol?</b> hier!</p>
+    <p>Binnenkort lees je meer over <b>Wie is de trol?</b> hier!</p>
   </div>
 </template>
 <script lang="ts" setup></script>
