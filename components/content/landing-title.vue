@@ -30,7 +30,6 @@ const style = computed(() => {
   position: relative;
   display: block;
   background: linear-gradient(var(--lbg1), var(--lbg2));
-  background: #0f0;
   background-size: 100vw;
   background-attachment: fixed;
   background-position: center;
