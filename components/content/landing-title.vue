@@ -1,10 +1,10 @@
 <template>
   <div class="landing-title">
-    <SearchBlob></SearchBlob>
+    <!-- <SearchBlob></SearchBlob> -->
     <div class="logo">
       <logo :style="style"></logo>
     </div>
-    <LandingComments></LandingComments>
+    <!-- <LandingComments></LandingComments> -->
     <div class="text">
       <slot></slot>
     </div>
@@ -30,10 +30,12 @@ const style = computed(() => {
   position: relative;
   display: block;
   background: linear-gradient(var(--lbg1), var(--lbg2));
+  background: #0f0;
   background-size: 100vw;
   background-attachment: fixed;
   background-position: center;
   padding-top: 4rem;
+  cursor: none;
 
   z-index: 0;
 }
@@ -61,7 +63,7 @@ const style = computed(() => {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all 1s @easeInOutExpo;
+    transition: all 3s @easeInOutExpo;
     :deep(g:first-child > path) {
       // filter: drop-shadow(0 0 0.5rem #22222299);
     }

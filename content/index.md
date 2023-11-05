@@ -8,7 +8,7 @@ In deze game kruip jij in de rol van _moderator_ van een _reactieplatform_ en is
 
 <!-- :searchBlob -->
 
-:scrollMore
+<!-- :scrollMore -->
 
 ::imageText{class="left"}
 Discussiëren doe je de hele dag door: met vrienden, ouders, docenten. In een goeie discussie luister je naar elkaars standpunten en ben je bereid je mening bij te stellen.

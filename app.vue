@@ -1,6 +1,6 @@
 <template>
   <div class="app" ref="text" :class="[position, twice, $route.path]">
-    <theMenu></theMenu>
+    <!-- <theMenu></theMenu> -->
     <ContentDoc />
   </div>
 </template>
