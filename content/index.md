@@ -83,5 +83,5 @@ Bij Wie is de trol? zijn de volgende organisaties aangesloten:
 :partners
 
 ::hidden
-Meer [Achtergrond informatie](/achtergrond).
+Meer [Achtergrond informatie](/lees-meer).
 ::
