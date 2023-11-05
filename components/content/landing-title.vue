@@ -1,10 +1,10 @@
 <template>
   <div class="landing-title">
-    <!-- <SearchBlob></SearchBlob> -->
+    <SearchBlob></SearchBlob>
     <div class="logo">
       <logo :style="style"></logo>
     </div>
-    <!-- <LandingComments></LandingComments> -->
+    <LandingComments></LandingComments>
     <div class="text">
       <slot></slot>
     </div>
