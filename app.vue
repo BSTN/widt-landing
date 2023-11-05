@@ -1,5 +1,10 @@
 <template>
-  <div class="app" ref="text" :class="[position, twice, $route.path]">
+  <div
+    class="app"
+    ref="text"
+    :class="[position, twice, $route.path]"
+    :path="$route.path"
+  >
     <theMenu></theMenu>
     <ContentDoc />
   </div>

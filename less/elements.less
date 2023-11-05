@@ -10,7 +10,8 @@ html, body {
   font-family: 'Authentic Sans', 'helvetica neue', Helvetica, sans-serif;
   font-family: 'Rubik', 'helvetica neue', Helvetica, sans-serif;
   font-family: 'Archivo', 'helvetica neue', Helvetica, sans-serif;
-  font-weight: normal;
+  font-family: var(--font);
+  font-weight: var(--weight);
   font-size: 22px;
   // font-size: 1.2vw;
   background: var(--bg);
@@ -131,7 +132,6 @@ label {
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0 auto;
-  font-family: 'exposure';
   // // font-weight: 800;
   // font-family: 'Archivo';
   // font-family: 'Poppins';
@@ -149,9 +149,16 @@ h1 {
   margin-bottom: 0.5em;
   text-align: center;
   scroll-margin-top: 6rem;
+  width: 10em;
   div[class$="/lees-meer"] & {
     margin-top: 3em;
     margin-bottom: 1.5em;
+  }
+  @media (max-width: 50rem) {
+    font-size: 2em;
+  }
+  &:hover {
+    font-variation-settings: "EXPO" -100;
   }
 }
 h2 {
@@ -166,21 +173,22 @@ h2 {
     text-decoration: none;
   }
 }
+@width: 34em; 
 
 p {
-  width: 40em;
+  width: @width;
   margin: 0 auto 1em;
   line-height: 1.8em;
 }
 
 ul, ol {
   margin: 0 auto;
-  width: 40rem;
+  width: @width;
   line-height: 1.4em;
   margin-bottom: 2rem;
   list-style-position: inside;
+  list-style-type: disc;
   li {
-    list-style: disc;
     margin-bottom: 0.5em;
   }
   a {
@@ -194,4 +202,5 @@ hr {
   border: 0;
   border-top: 1px solid var(--fg);
   margin-top: 6rem;
+  margin-bottom: 1rem;
 }

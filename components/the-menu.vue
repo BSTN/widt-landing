@@ -27,17 +27,22 @@
   padding-top: 0em;
   transition: all 0.5s;
   z-index: 99;
-  font-family: "exposure";
+  // font-family: var(--font);
+  font-weight: 700;
   text-transform: uppercase;
   font-variation-settings: "EXPO" -40;
-  letter-spacing: 0;
   font-size: 1rem;
   line-height: 1em;
+
   .sticky {
-    padding: 1em 2.5em 0.75em;
+    padding: 1em 1.5em 0.75em;
     // padding: 0.75em 2em 0.25em;
     margin: 0 auto;
     border-bottom: 0.5px solid transparent;
+    border-bottom: 1px solid var(--bc);
+    div[path="/"] & {
+      border-bottom-color: transparent;
+    }
     display: flex;
     // color: var(--bg);
     // &:after {
@@ -53,16 +58,16 @@
     .nottop & {
       box-shadow: 0 0 1rem rgba(#000, 0.2);
       color: var(--fg);
-      padding: 0.5em 1em 0;
+      // padding: 0.5em 1em 0;
       &:after {
         opacity: 0.2;
       }
-      .center {
-        &:before,
-        &:after {
-          opacity: 0 !important;
-        }
-      }
+      // .center {
+      //   &:before,
+      //   &:after {
+      //     opacity: 0 !important;
+      //   }
+      // }
     }
   }
   .nottop & {
@@ -93,7 +98,7 @@
   &:before {
     content: "voor";
     position: absolute;
-    top: 0.45rem;
+    top: 0.55rem;
     font-size: 0.4rem;
     letter-spacing: 0.05em;
     left: calc(50% - 2.5em);
@@ -113,8 +118,9 @@
 }
 
 a {
-  margin-top: -0.25rem;
+  // margin-top: -0.25rem;
   letter-spacing: 0.05em;
+  letter-spacing: 0em;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: all 0.5s @easeOutExpo;
@@ -150,15 +156,22 @@ a {
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 60rem) {
   .the-menu {
     padding: 0;
     .sticky {
       padding: 0.5em;
     }
   }
+  .left {
+    flex: 1;
+    max-width: none;
+  }
   .center {
     display: none;
+  }
+  .right {
+    align-self: flex-end;
   }
 }
 </style>

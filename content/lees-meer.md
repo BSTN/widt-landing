@@ -2,7 +2,7 @@
 title: achtergrond
 ---
 
-# Introductie: Het begin van internet
+# Introductie
 
 Lees meer over het ontstaan van internet op NEMO Kennislink:
 
@@ -14,9 +14,9 @@ Wil je eens echt ervaren hoe het ‘surfen’ er begin jaren negentig aan toe gi
 
 Nederland speelde een leidende rol in de ontwikkeling van het internet in Europa.
 
-- Lees meer op [NEMO Kennislink](https://www.nemokennislink.nl/publicaties/en-toen-was-er-internet/):
+- Lees meer op [NEMO Kennislink](https://www.nemokennislink.nl/publicaties/en-toen-was-er-internet/)
 
-# Hoofdstuk 1: Eerste online discussies
+# Hoofdstuk 2: Eerste online discussies
 
 Vroeger zeiden mensen nog zoiets als ‘ik ga even internetten’, omdat dat een activiteit op zich was en je er moeite voor moest doen. Lees meer over internettaal op NEMO Kennislink.
 
