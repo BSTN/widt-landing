@@ -52,7 +52,7 @@ const { stop } = useIntersectionObserver(
   :deep(h6),
   :deep(p) {
     transition: all 2s;
-    font-variation-settings: "EXPO" 100;
+    // font-variation-settings: "wght" 100;
   }
   &.visible {
     :deep(h1),
@@ -62,11 +62,10 @@ const { stop } = useIntersectionObserver(
     :deep(h5),
     :deep(h6),
     :deep(p) {
-      font-variation-settings: "EXPO" -30;
+      // font-variation-settings: "wght" 400;
     }
     :deep(h1) {
-      font-style: italic;
-      // font-variation-settings: "EXPO" 100;
+      // font-style: italic;
     }
   }
   .row {
@@ -93,16 +92,13 @@ const { stop } = useIntersectionObserver(
       width: 22em;
       max-width: 100%;
       margin-bottom: 1em;
-      line-height: 1.8em;
+      line-height: 1.5em;
     }
     :deep(h1),
     :deep(p) {
       text-align: left;
     }
     :deep(h1) {
-      //   filter: url(#fuzz);
-      //   font-weight: bold;
-      //   text-transform: uppercase;
       margin-top: 1em;
       margin-bottom: 0.5em;
       line-height: 1em;
@@ -115,7 +111,8 @@ const { stop } = useIntersectionObserver(
       margin: 0 auto 1em 0;
       animation-delay: 0.5s;
       animation-duration: 1.5s;
-      font-size: 1.25em;
+      font-size: 1em;
+      font-variation-settings: "wght" 400;
     }
   }
 }

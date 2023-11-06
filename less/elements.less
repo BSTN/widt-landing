@@ -12,6 +12,7 @@ html, body {
   background: var(--bg);
   color:var(--fg);
   line-height: 1.4em;
+  font-variation-settings: "weight" 100;
   --exposure:-30;
 }
 
@@ -146,6 +147,8 @@ h1 {
   scroll-margin-top: 6rem;
   width: 10em;
   font-weight: 600;
+  transition: all 0.5s;
+  font-variation-settings: "wght" 600;
   div[class$="/lees-meer"] & {
     margin-top: 3em;
     margin-bottom: 1.5em;
@@ -154,7 +157,7 @@ h1 {
     font-size: 2em;
   }
   &:hover {
-    font-variation-settings: "EXPO" -100;
+    font-variation-settings: "wght" 1000;
   }
 }
 h2 {
