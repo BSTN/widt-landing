@@ -51,7 +51,7 @@ const style = computed(() => {
   z-index: 10;
   .logoin();
   @media (orientation: portrait) {
-    @s: 90vw;
+    @s: 60vw;
     left: calc(50% - @s / 2);
     width: @s;
     height: @s;
@@ -66,6 +66,10 @@ const style = computed(() => {
     :deep(g:first-child > path) {
       // filter: drop-shadow(0 0 0.5rem #22222299);
     }
+  }
+  @media (max-width: 60rem) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -104,6 +108,10 @@ const style = computed(() => {
     em {
       font-variation-settings: "EXPO" -50;
     }
+  }
+  @media (max-width: 60rem) {
+    padding: 2em 1em;
+    margin: 0;
   }
 }
 </style>

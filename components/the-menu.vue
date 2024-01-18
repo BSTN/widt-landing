@@ -19,6 +19,7 @@
 <script lang="ts" setup></script>
 <style lang="less" scoped>
 @import "@/less/ease.less";
+
 .the-menu {
   width: 100%;
   position: sticky;
@@ -40,10 +41,13 @@
     margin: 0 auto;
     border-bottom: 0.5px solid transparent;
     border-bottom: 1px solid var(--bc);
+
     div[path="/"] & {
       border-bottom-color: transparent;
     }
+
     display: flex;
+
     // color: var(--bg);
     // &:after {
     //   content: "";
@@ -58,10 +62,12 @@
     .nottop & {
       box-shadow: 0 0 1rem rgba(#000, 0.2);
       color: var(--fg);
+
       // padding: 0.5em 1em 0;
       &:after {
         opacity: 0.2;
       }
+
       // .center {
       //   &:before,
       //   &:after {
@@ -70,31 +76,37 @@
       // }
     }
   }
+
   .nottop & {
     background: var(--bg);
   }
 }
+
 .left {
   flex: 1;
   text-align: left;
   max-width: 14rem;
 }
+
 .right {
   flex: 1;
   text-align: right;
   max-width: 14rem;
 }
+
 .center {
   text-align: center;
   flex: 1;
   font-size: 0.75em;
   letter-spacing: 0.1em;
+
   // line-height: 1em;
   &:before,
   &:after {
     transition: all 0.15s;
     .fadein();
   }
+
   &:before {
     content: "voor";
     position: absolute;
@@ -105,14 +117,15 @@
     width: 5em;
     text-align: center;
   }
+
   &:after {
     content: "2023—2024";
     position: absolute;
     bottom: 0.6rem;
     font-size: 0.4rem;
     letter-spacing: 0.05em;
-    left: calc(50% - 2.5em);
-    width: 5em;
+    left: calc(50% - 3.5em);
+    width: 7em;
     text-align: center;
   }
 }
@@ -131,6 +144,7 @@ a {
   font-size: 0.8em;
   overflow: auto;
   .menudown();
+
   &:hover {
     // text-decoration: underline;
     font-variation-settings: "EXPO" -100;
@@ -139,18 +153,23 @@ a {
     // text-shadow: 0 0 1em var(--link);
     // letter-spacing: 0.1em;
   }
+
   &:nth-child(1) {
     animation-delay: 0s;
   }
+
   &:nth-child(2) {
     animation-delay: 0.1s;
   }
+
   &:nth-child(3) {
     animation-delay: 0.2s;
   }
+
   &:nth-child(4) {
     animation-delay: 0.3s;
   }
+
   &:nth-child(5) {
     animation-delay: 0.4s;
   }
@@ -159,19 +178,32 @@ a {
 @media (max-width: 60rem) {
   .the-menu {
     padding: 0;
+
     .sticky {
       padding: 0.5em;
     }
   }
+
   .left {
     flex: 1;
     max-width: none;
+    width: 100%;
   }
+
   .center {
     display: none;
   }
+
   .right {
+    flex: none;
     align-self: flex-end;
+    width: auto;
   }
 }
-</style>
+
+@media (max-width: 40rem) {
+  a {
+    padding: 0.5em 0.5em;
+    font-weight: 500;
+  }
+}</style>

@@ -86,11 +86,12 @@ const { stop } = useIntersectionObserver(
     align-self: center;
     padding-bottom: 2rem;
     font-size: 24px;
-    max-width: 40vw;
+    width: 20rem;
+    max-width: 100%;
     // padding-left: 4em;
     :deep(p) {
       width: 22em;
-      max-width: 100%;
+      max-width: calc(100% - 2em);
       margin-bottom: 1em;
       line-height: 1.5em;
     }
@@ -184,6 +185,23 @@ const { stop } = useIntersectionObserver(
     transition-delay: 0.25s;
     .hidden & {
       transform: scale(0);
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  .img {
+    width: calc(100% - 1rem);
+    height: 4rem;
+    margin: 0.5em;
+    border-radius: 1em;
+  }
+  .image-text {
+    .text {
+      width: 100%;
+      :deep(p) {
+        margin: 2em auto;
+      }
     }
   }
 }

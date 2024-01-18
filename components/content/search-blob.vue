@@ -47,6 +47,9 @@ const r = computed(() => {
 <style lang="less" scoped>
 .searchblob {
   pointer-events: none;
+  @media (max-width: 60rem) {
+    display: none;
+  }
 }
 .image {
   position: absolute;

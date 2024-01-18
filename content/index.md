@@ -37,6 +37,8 @@ De uitslag van de individuele opdrachten wordt vervolgens getoond op het grote s
 
 In de handleiding voor docenten (binnenkort hier te vinden) staan suggesties voor discussie, een begrippenlijst en meer informatie over het onderzoeksproject.
 
+Wil je een Wie is de trol? testen op jouw school, of meer informatie? Neem dan contact met ons op via: [jansen@e-nemo.nl](mailto:jansen@e-nemo.nl).
+
 ---
 
 # Voor Bibliotheken
@@ -78,6 +80,9 @@ _Wie is de trol?_ is een initiatief van onderzoekers van het Meertens Instituut 
 Het project heeft als doel om digitale vaardigheden van jongeren en senioren te vergroten door hen kennis te laten maken met de werking van kunstmatige intelligentie in online discussies en inzicht te geven in de mechanieken die werkzaam zijn in online discussievoering.
 
 De game is ontwikkeld door [Basten Stokhuyzen](https://bstn.nl) in samenwerking met Cedric Waterschoot en Mathilde Jansen.
+
+Je kunt ons het beste bereiken via: [jansen@e-nemo.nl](mailto:jansen@e-nemo.nl)
+
 Bij Wie is de trol? zijn de volgende organisaties aangesloten:
 
 :partners

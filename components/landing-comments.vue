@@ -3,7 +3,10 @@
     <div
       v-for="(comment, k) in comments"
       class="comment"
-      :class="{ active: k === Math.floor(active) || k === Math.floor(active2) }"
+      :class="{
+        active: k === Math.floor(active) || k === Math.floor(active2),
+        mobileactive: k === Math.floor(mobileactive),
+      }"
     >
       <div class="commenttext">{{ comment }}</div>
     </div>
@@ -13,10 +16,14 @@
 import comments from "@/content/comments.yml";
 const active = ref(0);
 const active2 = ref(1.5);
+const mobileactive = ref(0);
 const interval = setInterval(() => {
   active.value = (active.value + 1.5) % (comments.length - 1);
   active2.value = (active2.value + 1.5) % (comments.length - 1);
 }, 2000);
+const interval2 = setInterval(() => {
+  mobileactive.value = (active.value + 1.5) % (comments.length - 1);
+}, 5000);
 </script>
 <style lang="less" scoped>
 .comments {
@@ -38,13 +45,6 @@ const interval = setInterval(() => {
   // --bg: #2e2e2e;
   // --fg: #eee;
   --opacity: 0.9;
-  @media (max-width: 60rem) {
-    position: relative;
-    height: auto;
-    .comment {
-      position: relative;
-    }
-  }
   .comment {
     position: absolute;
     color: var(--fg);
@@ -128,6 +128,39 @@ const interval = setInterval(() => {
       left: 10vw;
       top: 80%;
       // background: #5f3248;
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  .comments {
+    position: relative;
+    height: 10rem !important;
+    white-space: nowrap;
+    overflow: visible;
+    margin: 2em 1em 0;
+    width: calc(100% - 3em);
+    .comment {
+      position: absolute !important;
+      left: 0 !important;
+      top: 0 !important;
+      right: auto !important;
+      bottom: auto !important;
+      display: inline-block;
+      white-space: normal !important;
+      vertical-align: top;
+      margin: 0 1em;
+      &:hover {
+        transform: none !important;
+      }
+      transform: translateY(3rem) !important;
+      width: 100%;
+      opacity: 0 !important;
+      transition: all 1s !important;
+      &.mobileactive {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
     }
   }
 }
