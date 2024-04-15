@@ -1,5 +1,14 @@
 <template>
   <div class="blog">
+    <a href="https://www.nemokennislink.nl/publicaties/ai-tilt-discussie-naar-hoger-niveau/" target="_blank"
+      class="item">
+      <div class="date">29 maart 2024</div>
+      <div class="title">‘AI tilt discussie naar hoger niveau’</div>
+
+      <div class="link">Lees
+        het artikel op nemokennislink.nl →
+      </div>
+    </a>
     <a href="https://www.nemokennislink.nl/publicaties/een-online-discussie-is-vaak-geen-echte-dialoog/" target="_blank"
       class="item">
       <div class="date">1 maart 2024</div>
@@ -21,10 +30,12 @@
 }
 
 .item {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
+
   text-align: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-decoration: none;
+  display: block;
 
   .date {
     font-size: 0.8rem;
