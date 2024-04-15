@@ -33,7 +33,7 @@
   margin: 0 auto 2rem;
 
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   text-decoration: none;
   display: block;
 
