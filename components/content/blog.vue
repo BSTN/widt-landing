@@ -1,5 +1,13 @@
 <template>
   <div class="blog">
+    <a href="https://www.nemokennislink.nl/publicaties/continu-met-elkaar-in-contact/" target="_blank" class="item">
+      <div class="date">11 november 2024</div>
+      <div class="title">‘Continu met elkaar in contact’</div>
+
+      <div class="link">Lees
+        het artikel op nemokennislink.nl →
+      </div>
+    </a>
     <a href="https://www.nemokennislink.nl/publicaties/ai-tilt-discussie-naar-hoger-niveau/" target="_blank"
       class="item">
       <div class="date">29 maart 2024</div>

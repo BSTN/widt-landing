@@ -3,15 +3,19 @@ import svgLoader from 'vite-svg-loader'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
+
   app: {
     baseURL: process.env.BASE || '/'
   },
+
   modules: [
     '@nuxt/content'
   ],
+
   css: [
     '@/less/elements.less'
   ],
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -24,5 +28,7 @@ export default defineNuxtConfig({
       ViteYaml(),
       svgLoader()
     ]
-  }
+  },
+
+  compatibilityDate: '2024-11-11'
 })

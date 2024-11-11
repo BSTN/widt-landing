@@ -1,13 +1,9 @@
 <template>
   <div class="comments">
-    <div
-      v-for="(comment, k) in comments"
-      class="comment"
-      :class="{
-        active: k === Math.floor(active) || k === Math.floor(active2),
-        mobileactive: k === Math.floor(mobileactive),
-      }"
-    >
+    <div v-for="(comment, k) in comments" class="comment" :class="{
+      active: k === Math.floor(active) || k === Math.floor(active2),
+      mobileactive: k === Math.floor(mobileactive),
+    }">
       <div class="commenttext">{{ comment }}</div>
     </div>
   </div>
@@ -17,13 +13,15 @@ import comments from "@/content/comments.yml";
 const active = ref(0);
 const active2 = ref(1.5);
 const mobileactive = ref(0);
-const interval = setInterval(() => {
-  active.value = (active.value + 1.5) % (comments.length - 1);
-  active2.value = (active2.value + 1.5) % (comments.length - 1);
-}, 2000);
-const interval2 = setInterval(() => {
-  mobileactive.value = (active.value + 1.5) % (comments.length - 1);
-}, 5000);
+onMounted(() => {
+  const interval = setInterval(() => {
+    active.value = (active.value + 1.5) % (comments.length - 1);
+    active2.value = (active2.value + 1.5) % (comments.length - 1);
+  }, 2000);
+  const interval2 = setInterval(() => {
+    mobileactive.value = (active.value + 1.5) % (comments.length - 1);
+  }, 5000);
+})
 </script>
 <style lang="less" scoped>
 .comments {
@@ -45,6 +43,7 @@ const interval2 = setInterval(() => {
   // --bg: #2e2e2e;
   // --fg: #eee;
   --opacity: 0.9;
+
   .comment {
     position: absolute;
     color: var(--fg);
@@ -83,23 +82,29 @@ const interval2 = setInterval(() => {
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 0%);
       background: var(--bg);
     }
+
     &.active {
       opacity: var(--opacity);
       transform: scale(1);
       pointer-events: auto;
     }
+
     &:nth-child(1) {
       animation-delay: 0.5s;
     }
+
     &:nth-child(2) {
       animation-delay: 1s;
     }
+
     &:nth-child(3) {
       animation-delay: 1.25s;
     }
+
     &:nth-child(4) {
       animation-delay: 1.75s;
     }
+
     &:nth-child(5) {
       animation-delay: 2.25s;
     }
@@ -110,20 +115,24 @@ const interval2 = setInterval(() => {
       pointer-events: auto;
       opacity: var(--opacity);
     }
+
     &:nth-child(4n + 1) {
       right: 5vw;
       top: 10%;
     }
+
     &:nth-child(4n + 2) {
       left: 10vw;
       top: 4rem;
       // background: #18212b;
     }
+
     &:nth-child(4n + 3) {
       right: 10vw;
       top: 70%;
       // background: #23182b;
     }
+
     &:nth-child(4n + 4) {
       left: 10vw;
       top: 80%;
@@ -140,6 +149,7 @@ const interval2 = setInterval(() => {
     overflow: visible;
     margin: 2em 1em 0;
     width: calc(100% - 3em);
+
     .comment {
       position: absolute !important;
       left: 0 !important;
@@ -150,13 +160,16 @@ const interval2 = setInterval(() => {
       white-space: normal !important;
       vertical-align: top;
       margin: 0 1em;
+
       &:hover {
         transform: none !important;
       }
+
       transform: translateY(3rem) !important;
       width: 100%;
       opacity: 0 !important;
       transition: all 1s !important;
+
       &.mobileactive {
         opacity: 1 !important;
         transform: translateY(0) !important;
