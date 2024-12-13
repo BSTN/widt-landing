@@ -39,6 +39,8 @@ In de handleiding voor docenten (binnenkort hier te vinden) staan suggesties voo
 
 Wil je een Wie is de trol? testen op jouw school, of meer informatie? Neem dan contact met ons op via: [jansen@e-nemo.nl](mailto:jansen@e-nemo.nl).
 
+Download hier de [handleiding voor docenten](/docentenhandleiding-wie-is-de-trol.pdf){target="_blank" download="docentenhandleiding-wie-is-de-trol.pdf"}.
+
 ---
 
 # Voor Bibliotheken
