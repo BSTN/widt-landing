@@ -80,6 +80,7 @@
     width: 24rem;
     max-width: 100%;
     line-height: 1.2em;
+    text-wrap:balance;
   }
 
   .link {
