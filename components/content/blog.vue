@@ -1,5 +1,21 @@
 <template>
   <div class="blog">
+    <a href="https://www.nemokennislink.nl/publicaties/het-is-handig-maar-bellen-is-prettiger/" target="_blank" class="item">
+      <div class="date">31 december 2024</div>
+      <div class="title">‘Het is handig, maar bellen is prettiger’</div>
+
+      <div class="link">Lees
+        het artikel op nemokennislink.nl →
+      </div>
+    </a>
+    <a href="https://www.nemokennislink.nl/publicaties/ouderen-redden-zich-online-prima/" target="_blank" class="item">
+      <div class="date">24 december 2024</div>
+      <div class="title">‘Ouderen redden zich online prima’</div>
+
+      <div class="link">Lees
+        het artikel op nemokennislink.nl →
+      </div>
+    </a>
     <a href="https://www.nemokennislink.nl/publicaties/zeker-in-vakanties-is-online-contact-fijn/" target="_blank" class="item">
       <div class="date">17 december 2024</div>
       <div class="title">‘Zeker in vakanties is online contact fijn’</div>
