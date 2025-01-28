@@ -15,6 +15,14 @@ export default defineNuxtConfig({
   css: [
     '@/less/elements.less'
   ],
+  routeRules: {
+    '/scholen': {
+      redirect: '/#voor-scholen'
+    },
+    '/bibliotheken': {
+      redirect: '/#voor-bibliotheken'
+    }
+  },
 
   vite: {
     css: {

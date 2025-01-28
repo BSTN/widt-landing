@@ -35,11 +35,20 @@ _Wie is de trol?_ wordt in klasverband gespeeld. De game bestaat uit 6 hoofdstuk
 
 De uitslag van de individuele opdrachten wordt vervolgens getoond op het grote scherm en kan gebruikt worden voor een klassikale discussie.
 
-In de handleiding voor docenten (binnenkort hier te vinden) staan suggesties voor discussie, een begrippenlijst en meer informatie over het onderzoeksproject.
+In de handleiding voor docenten staan suggesties voor discussie, een begrippenlijst en meer informatie over het onderzoeksproject. 
 
-Wil je een Wie is de trol? testen op jouw school, of meer informatie? Neem dan contact met ons op via: [jansen@e-nemo.nl](mailto:jansen@e-nemo.nl).
+Er zijn 2 versies beschikbaar van de game: naast de originele versie hebben we ook een verkorte versie gemaakt. Ze duren respectievelijk ongeveer 50 minuten en 30 minuten. Als er meer tijd beschikbaar is, kan er meer ruimte worden gemaakt voor de discussie in de klas. Voor een inhoudelijke vergelijking kan je het beste de handleiding voor docenten naast elkaar leggen.
 
-Download hier de [handleiding voor docenten](/docentenhandleiding-wie-is-de-trol.pdf){target="_blank" download="docentenhandleiding-wie-is-de-trol.pdf"}.
+Download ze hier:
+- [handleiding voor docenten (originele versie, pdf)](/Docentenhandleiding-wie-is-de-trol.pdf){target="_blank" download="docentenhandleiding-wie-is-de-trol.pdf"} .
+- [handleiding voor docenten (korte versie, pdf)](/docentenhandleiding-wie-is-de-trol-korte-versie.pdf){target="_blank" download="docentenhandleiding-wie-is-de-trol-korte-versie.pdf"}
+- [bijlage: extra opdrachten (pdf)](/bijlage-wie-is-de-trol-extra-opdrachten.pdf){target="_blank" download="bijlage-wie-is-de-trol-extra-opdrachten.pdf"}
+
+Start de game door te klikken op de link hieronder (Deze links zijn voor de docenten, leerlingen kunnen deelnemen via de QR-code in de game.):
+- [start de game (originele versie)](https://game.wie-is-de-trol.nl/){target="_blank"}
+- [start de game (korte versie)](https://gamev2.wie-is-de-trol.nl/){target="_blank"}
+
+Wil je een Wie is de trol? testen op jouw school, of meer informatie? Neem dan contact met ons op via: [info@wie-is-de-trol.nl](mailto:info@wie-is-de-trol).
 
 ---
 
@@ -49,9 +58,11 @@ Download hier de [handleiding voor docenten](/docentenhandleiding-wie-is-de-trol
 
 Voor bibliotheken organiseren we in samenwerking met [Alliantie Digitaal Samenleven](https://digitaalsamenleven.nl/) en [NEMO Kennislink](https://www.nemokennislink.nl/) zogenaamde _Dialoogavonden_. Tijdens een Dialoogavond gaan de aanwezigen onder leiding van een moderator in gesprek over onlinediscussievoering en hoe je met hulp van Artificiële Intelligentie (AI) dit soort discussies in goede banen kunt leiden.
 
+Interesse in de dialoogavonden of wil je in jouw bibliotheek een discussie over online discussievoering en Artificiële Intelligentie (AI) organiseren? Neem dan contact met ons op via [info@wie-is-de-trol.nl](mailto:info@wie-is-de-trol.nl).
+
 ---
 
-# Voor Festivals
+<!-- # Voor Festivals
 
 ## beat-the-bot!
 
@@ -65,7 +76,7 @@ Probeer het uit en Beat the bot! Schrijf _de meest constructieve bijdrage_ die j
 
 [Lees hier](https://meertens.knaw.nl/2021/06/24/hoe-kan-ai-bijdragen-aan-een-gezonder-debat/) een interview met Cedric Waterschoot over zijn onderzoek.
 
----
+--- -->
 
 # Blog
 

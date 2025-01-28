@@ -8,7 +8,7 @@
       <div class="center">
         <a href="/#voor-scholen">scholen</a>
         <a href="/#voor-bibliotheken">bibliotheken</a>
-        <a href="/#voor-festivals">festivals</a>
+        <!-- <a href="/#voor-festivals">festivals</a> -->
       </div>
       <div class="right">
         <a href="/#over-ons">over ons</a>
@@ -99,6 +99,13 @@
   flex: 1;
   font-size: 0.75em;
   letter-spacing: 0.1em;
+  a {
+    width: 8rem;
+    text-align: right;
+    &:nth-child(2) {
+      text-align: left;
+    }
+  }
 
   // line-height: 1em;
   &:before,
@@ -119,7 +126,7 @@
   }
 
   &:after {
-    content: "2023—2024";
+    content: "2023—2027";
     position: absolute;
     bottom: 0.6rem;
     font-size: 0.4rem;
