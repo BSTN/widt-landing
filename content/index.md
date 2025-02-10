@@ -54,11 +54,22 @@ Wil je een Wie is de trol? testen op jouw school, of meer informatie? Neem dan c
 
 # Voor Bibliotheken
 
-## Dialoogavonden
+## Wie is de trol? dialoogactiviteit
 
-Voor bibliotheken organiseren we in samenwerking met [Alliantie Digitaal Samenleven](https://digitaalsamenleven.nl/) en [NEMO Kennislink](https://www.nemokennislink.nl/) zogenaamde _Dialoogavonden_. Tijdens een Dialoogavond gaan de aanwezigen onder leiding van een moderator in gesprek over onlinediscussievoering en hoe je met hulp van Artificiële Intelligentie (AI) dit soort discussies in goede banen kunt leiden.
+### Ga met elkaar in gesprek over online discussies en moderatie
+ 
+- **Duur activiteit:** 45 tot 60 minuten
+- **Onderwerp:** Onlinediscussies, Artificiële Intelligentie (AI)
+- **Doelgroep:** Volwassenen, digitaal minder geletterden
+ 
+Met deze activiteit kruipen deelnemers in de rol van moderator. Ze gaan met elkaar in gesprek over online discussies, door samen echte reacties op een bericht van NU.nl te beoordelen. Wat valt onder 'vrijheid van meningsuiting' en wanneer gaat een reactie echt te ver? 
 
-Interesse in de dialoogavonden of wil je in jouw bibliotheek een discussie over online discussievoering en Artificiële Intelligentie (AI) organiseren? Neem dan contact met ons op via [info@wie-is-de-trol.nl](mailto:info@wie-is-de-trol.nl).
+Onder leiding van een moderator leren deelnemers met deze activiteit wat een trol is en hoe verschillend we denken over wat 'acceptabel' is in een online discussie. Daarmee ontdekken ze hoe ingewikkeld het is om te modereren, en welke rol Artificiële Intelligentie (AI) hierin kan spelen. En tot slot: wat kun je zelf doen om een onlinegesprek goed te laten verlopen?
+ 
+Onderstaande dialoogactiviteit richt zich op mensen die digitaal minder vaardig zijn. Er is ook een [mobiele game-variant](https://gamev2.wie-is-de-trol.nl/) voor een digitaal vaardiger doelgroep.
+ 
+- [Download de Handleiding dialoogactiviteit Wie is de trol?](/handleiding-wie-is-de-trol-dialoogpakket.pdf){target="_blank" download="handleiding-wie-is-de-trol-dialoogpakket.pdf"}
+- [De bijbehorende presentatie met video’s kunt u met deze link openen in een webbrowser (zie handleiding).](https://www.canva.com/design/DAGcu4Idvzw/KBnxnKPBCf4Zld6R3giHfQ/view?utm_content=DAGcu4Idvzw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h280e1d5689){target="_blank"} Signup/login is niet nodig.
 
 ---
 

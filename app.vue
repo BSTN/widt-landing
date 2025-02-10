@@ -6,7 +6,7 @@
     :path="$route.path"
   >
     <theMenu></theMenu>
-    <ContentDoc />
+    <ContentDoc class="content-doc"/>
   </div>
 </template>
 <script type="ts" setup>
