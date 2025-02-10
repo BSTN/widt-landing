@@ -69,7 +69,7 @@ Onder leiding van een moderator leren deelnemers met deze activiteit wat een tro
 Onderstaande dialoogactiviteit richt zich op mensen die digitaal minder vaardig zijn. Er is ook een [mobiele game-variant](https://gamev2.wie-is-de-trol.nl/) voor een digitaal vaardiger doelgroep.
  
 - [Download de Handleiding dialoogactiviteit Wie is de trol?](/handleiding-wie-is-de-trol-dialoogpakket.pdf){target="_blank" download="handleiding-wie-is-de-trol-dialoogpakket.pdf"}
-- [De bijbehorende presentatie met video’s kunt u met deze link openen in een webbrowser (zie handleiding).](https://www.canva.com/design/DAGcu4Idvzw/KBnxnKPBCf4Zld6R3giHfQ/view?utm_content=DAGcu4Idvzw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h280e1d5689){target="_blank"} Signup/login is niet nodig.
+- [De bijbehorende presentatie met video’s kunt u met deze link openen in een webbrowser (zie handleiding).](https://www.canva.com/design/DAGcu4Idvzw/KBnxnKPBCf4Zld6R3giHfQ/view?utm_content=DAGcu4Idvzw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h280e1d5689){target="_blank"}
 
 ---
 
