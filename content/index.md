@@ -40,7 +40,7 @@ In de handleiding voor docenten staan suggesties voor discussie, een begrippenli
 Er zijn 2 versies beschikbaar van de game: naast de originele versie hebben we ook een verkorte versie gemaakt. Ze duren respectievelijk ongeveer 50 minuten en 30 minuten. Als er meer tijd beschikbaar is, kan er meer ruimte worden gemaakt voor de discussie in de klas. Voor een inhoudelijke vergelijking kan je het beste de handleiding voor docenten naast elkaar leggen.
 
 Download ze hier:
-- [handleiding voor docenten (originele versie, pdf)](/Docentenhandleiding-wie-is-de-trol.pdf){target="_blank" download="docentenhandleiding-wie-is-de-trol.pdf"} .
+- [handleiding voor docenten (originele versie, pdf)](/docentenhandleiding-wie-is-de-trol.pdf){target="_blank" download="docentenhandleiding-wie-is-de-trol.pdf"} .
 - [handleiding voor docenten (korte versie, pdf)](/docentenhandleiding-wie-is-de-trol-korte-versie.pdf){target="_blank" download="docentenhandleiding-wie-is-de-trol-korte-versie.pdf"}
 - [bijlage: extra opdrachten (pdf)](/bijlage-wie-is-de-trol-extra-opdrachten.pdf){target="_blank" download="bijlage-wie-is-de-trol-extra-opdrachten.pdf"}
 
